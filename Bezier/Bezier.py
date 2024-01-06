@@ -166,9 +166,9 @@ while running:
         recursive_lerp(NodeList, lerpVal)
 
     for i in range(len(bezPoint)):
-        pygame.draw.circle(screen, bezPoint[i][1], bezPoint[i][0], 2)
+        pygame.draw.circle(screen, bezPoint[i][1], bezPoint[i][0], 4)
 
-    draw_text("Click to place node. Click a node to delete or hold the node to move it. L and R arrows to changethe lerpval", pygame.font.Font(None, 25), (255, 255, 255), (10, 10))
+    draw_text("Click to place node. Click a node to delete or hold the node to move it. L and R arrows to change the lerpval", pygame.font.Font(None, 25), (255, 255, 255), (10, 10))
     draw_text(f"Lerpvalue: {abs(round(lerpVal, 2))}", pygame.font.Font(None, 25), (255, 255, 255), (10, 40))
 
     pygame.display.flip()  # Update the screen
